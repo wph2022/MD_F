@@ -1,13 +1,11 @@
-1.安装docker
+### 1.安装docker
 sudo apt  install docker.io 
 sudo usermod -aG docker $USER
 
 sudo reboot
-docker 安装cloudflare
-docker run -d --restart unless-stopped docker.wangdd.online/cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZTk3ODUwMzQ0OTUyMmJlNDhkZjExZDkxZmRjZmNjNzMiLCJ0IjoiMGRlNDQwY2ItZmZiNy00MjRjLWFmMzktN2U1YWMyYWZmYmRjIiwicyI6IlpUWTRZbUl3T0dVdFkyWmxNQzAwTm1FekxUZ3dabVV0TmpGak9URTJZbU14TWpNMSJ9
-
+### 2.docker 安装cloudflare
 docker run -d --restart always docker.wangdd.online/cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiZTk3ODUwMzQ0OTUyMmJlNDhkZjExZDkxZmRjZmNjNzMiLCJ0IjoiZTQxODQ2MjEtMWYwOC00YTc1LThlOTktNTI0NTYxMzQ5NjRkIiwicyI6Ill6VTFOelk0T0RrdFlXRTNaaTAwWkdZeUxXSmtZMll0TWpjd09HWmlZMll4WlRjNSJ9
-2.cloudflared 下载地址:
+### 3.cloudflared 下载地址:
 https://github.com/cloudflare/cloudflared/releases/tag/2024.11.0
 rdp:
 cloudflared access rdp --hostname rdp.wangdd.sbs --url rdp://localhost:33890
