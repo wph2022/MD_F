@@ -11,14 +11,14 @@ rdp:
 cloudflared access rdp --hostname rdp.wangdd.sbs --url rdp://localhost:33890
 Refer to SM8450/SM8475 LINUX ANDROID SOFTWARE USER GUIDE (SP80-PV345-4)
 
-ssh
+### 4.ssh
 #-url localhost:222 的作用是转到本机器的222端口，方便用任意ssh工具连接管理
 cloudflared access ssh --hostname ssh.wangdd.sbs -url localhost:222 
 
-3.内网穿透:
+### 5.内网穿透:
 https://blog.csdn.net/Tisfy/article/details/143114828
 
-安装1pan1
+### 6.安装1pan1
 docker run -d \
     --name 1panel \
     --restart always \
